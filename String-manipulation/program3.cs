@@ -1,6 +1,5 @@
 class Program2
 {
-
     static void Main()
     {
         // shared one
@@ -10,7 +9,7 @@ class Program2
         // it's not the shared one
         string b = new string("Niti"); //using constructor // It's treating as a new string object 
         string d = new string("Niti");
-            Console.WriteLine(object.ReferenceEquals(b, d));
+        Console.WriteLine(object.ReferenceEquals(b, d));
         Console.WriteLine("The value of B is :" + b);
         Console.WriteLine(a == b); // It's checking the value .Equals
         Console.WriteLine(a.GetHashCode());
@@ -26,8 +25,6 @@ class Program2
         Console.WriteLine(object.ReferenceEquals(a, c)); // true
         // throughout the execution the hash codes will be consistent
         Console.WriteLine(StringComparer.Ordinal.GetHashCode(a));
-         Console.WriteLine(StringComparer.Ordinal.GetHashCode(c));
+        Console.WriteLine(StringComparer.Ordinal.GetHashCode(c));
     }
-
-
 }
