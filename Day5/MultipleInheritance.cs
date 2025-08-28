@@ -1,17 +1,12 @@
-
 using school;
 public interface ICurricularActivities
 {
-
-
     void Stream();
     void Show();
-
 }
 
 public interface INonCurricularActivities
 {
-
     void Stream();
 }
 
@@ -27,7 +22,6 @@ public class Student : Person, ICurricularActivities, INonCurricularActivities
     public void Show()
     {
 
-        
     }
 
     public void Stream()
@@ -43,7 +37,6 @@ public class Student : Person, ICurricularActivities, INonCurricularActivities
 
     static void Main()
     {
-
         Student s = new Student();
         Console.WriteLine("Enter the name of student");
         string sname = Console.ReadLine();
