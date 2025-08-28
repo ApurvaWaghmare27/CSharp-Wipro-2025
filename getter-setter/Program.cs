@@ -2,11 +2,8 @@
 using StudentProgram;
 class StudentArray
 {
-
-
     static void Main()
     {
-
         int studentCount = 1;
         Student[] students = new Student[studentCount];//Array of student class 
         // string[][] studentSubject = new string[noOfStudent][];
@@ -26,13 +23,9 @@ class StudentArray
 
             for (int j = 0; j < subjectCount; j++)
             {
-
                 Console.Write("Enter marks for subjects :");
                 students[i].SubjectMarks[j] = Convert.ToInt32(Console.ReadLine());
-
             }
-
-
         }
 
         Console.WriteLine("Student obj details are given below :");
@@ -45,9 +38,7 @@ class StudentArray
             foreach (int marks in s.SubjectMarks)
             {
                 Console.WriteLine("Students Marks are : " + marks);
-                    }
-
+            }
         }
     }
-
 }
