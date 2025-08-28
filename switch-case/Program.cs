@@ -1,4 +1,4 @@
-﻿class LoopProgram
+﻿class LoopsProgram
 {
     static void Main()
     {
