@@ -26,18 +26,12 @@ class Employee
          }
          set
          {
-
              if (index == 0)
                  id = Convert.ToInt32(value);
 
              else if (index == 1)
                  name = value.ToString();
-
          }
-
-
-
-
      }
 
      class MainProgram
@@ -47,14 +41,12 @@ class Employee
              Employee e = new Employee(101, "Niti");
              Console.WriteLine(e[1]);
 
-
                // Console.WriteLine("Enter your age");
                 if (int.TryParse("12" , out int value))
                     Console.WriteLine("Value is " + value);
 
                 //At the time of taking input in front end itself you can cofirm the value 
              //   Console.WriteLine("Even after converting the value is in string format"); 
-
          }
      }
 
